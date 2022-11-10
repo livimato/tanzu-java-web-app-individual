@@ -26,7 +26,7 @@ engine:
     chain:
     - type: ReplaceText
       substitutions:
-      - text: tanzu-java-web-app
+      - text: tanzu-java-web-app-individual
         with: "#artifactId.toLowerCase()"
     - type: ReplaceText
       substitutions:
@@ -37,7 +37,7 @@ engine:
     chain:
     - type: ReplaceText
       substitutions:
-      - text: ": tanzu-java-web-app"
+      - text: ": tanzu-java-web-app-individual"
         with: "': ' + #artifactId.toLowerCase()"
     - merge:
       - type: InvokeFragment
@@ -49,11 +49,11 @@ engine:
     chain:
     - type: ReplaceText
       substitutions:
-      - text: tanzu-java-web-app
+      - text: tanzu-java-web-app-individual
         with: "#artifactId"
   - include: [ "catalog/*.yaml" ]
     chain:
     - type: ReplaceText
       substitutions:
-      - text: tanzu-java-web-app
+      - text: tanzu-java-web-app-individual
         with: "#artifactId"
