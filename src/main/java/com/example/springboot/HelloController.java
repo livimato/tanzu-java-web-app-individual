@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Java web app - #5 10Nov";
+		return "Hello KitKat Lab! From TAP Java web app - 1 Dec 2022";
 	}
 
 }
